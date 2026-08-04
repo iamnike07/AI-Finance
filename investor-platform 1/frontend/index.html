@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ledger — Investor Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <h1>Ledger</h1>
+      <p class="tagline">Investor intelligence, read from the filing itself</p>
+    </div>
+    <label class="upload-btn">
+      <input type="file" id="file-input" accept="application/pdf" hidden />
+      <span id="upload-label">Upload 10-K</span>
+    </label>
+  </header>
+
+  <div id="upload-status" class="upload-status" hidden></div>
+
+  <main class="layout">
+    <section class="panel ledger-panel">
+      <div class="panel-head">
+        <h2>Filings</h2>
+        <select id="report-select" disabled>
+          <option value="">No reports yet</option>
+        </select>
+      </div>
+
+      <div id="kpi-empty" class="empty-state">
+        <p>No filing selected.</p>
+        <p class="empty-sub">Upload a 10-K above, or choose one from the list once you have.</p>
+      </div>
+
+      <div id="kpi-ledger" class="kpi-ledger" hidden>
+        <div class="ledger-row" data-key="revenue">
+          <span class="ledger-label">Revenue</span>
+          <span class="ledger-value">—</span>
+        </div>
+        <div class="ledger-row" data-key="net_income">
+          <span class="ledger-label">Net income</span>
+          <span class="ledger-value">—</span>
+        </div>
+        <div class="ledger-row" data-key="operating_income">
+          <span class="ledger-label">Operating income</span>
+          <span class="ledger-value">—</span>
+        </div>
+        <div class="ledger-row" data-key="cash_flow_from_operations">
+          <span class="ledger-label">Cash flow (ops)</span>
+          <span class="ledger-value">—</span>
+        </div>
+        <div class="ledger-row" data-key="total_assets">
+          <span class="ledger-label">Total assets</span>
+          <span class="ledger-value">—</span>
+        </div>
+        <div class="ledger-row" data-key="total_liabilities">
+          <span class="ledger-label">Total liabilities</span>
+          <span class="ledger-value">—</span>
+        </div>
+
+        <div class="ledger-lists">
+          <div class="ledger-list risk">
+            <h3>Risk factors</h3>
+            <ul id="risk-list"></ul>
+          </div>
+          <div class="ledger-list growth">
+            <h3>Growth drivers</h3>
+            <ul id="growth-list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel chat-panel">
+      <div class="panel-head">
+        <h2>Ask the filing</h2>
+      </div>
+      <div id="chat-log" class="chat-log">
+        <div class="chat-empty">Questions you ask are answered from whatever's been ingested so far.</div>
+      </div>
+      <form id="chat-form" class="chat-form">
+        <input
+          type="text"
+          id="chat-input"
+          placeholder="What drove the change in gross margin?"
+          autocomplete="off"
+        />
+        <button type="submit">Ask</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
