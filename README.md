@@ -5,6 +5,7 @@
 **Real-time corporate insights, KPI extraction, and intelligent financial analysis**
 
 <img width="1900" height="964" alt="image" src="https://github.com/user-attachments/assets/d1d4714c-205d-4cf6-aaec-04f8b6fa8cf1" />
+<img width="1902" height="965" alt="image" src="https://github.com/user-attachments/assets/49997464-2d1f-4359-9c10-8a7a70122728" />
 
 [![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
