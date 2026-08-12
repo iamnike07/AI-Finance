@@ -1,8 +1,10 @@
 <div align="center">
-
+          
 # 💹 Binance — AI-Powered Finance Platform
 
 **Real-time corporate insights, KPI extraction, and intelligent financial analysis**
+
+<img width="1543" height="784" alt="image" src="https://github.com/user-attachments/assets/58a1e333-a436-4d18-aad9-d5c21be00a24" />
 
 [![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
@@ -248,6 +250,6 @@ This project is for educational and personal use.
 
 <div align="center">
 
-**Built with ❤️ using Gemini AI, FastAPI, and PostgreSQL**
+**Built using Gemini AI, FastAPI, and PostgreSQL**
 
 </div>
