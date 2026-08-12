@@ -1,0 +1,20 @@
+[project]
+name = "investor-platform"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi==0.115.0",
+    "google-genai>=1.55.0",
+    "langchain-text-splitters==0.2.2",
+    "pgvector==0.3.2",
+    "psycopg[binary]==3.2.1",
+    "pymupdf4llm==0.0.17",
+    "python-dotenv==1.0.1",
+    "python-multipart==0.0.9",
+    "rank-bm25==0.2.2",
+    "requests==2.32.3",
+    "sentence-transformers==3.0.1",
+    "uvicorn[standard]==0.30.6",
+]
