@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Binance</title>
+  <meta name="description" content="Binance — Real-time corporate insights, KPI extraction, and financial analysis." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=3" />
+</head>
+<body>
+  <div class="app-shell">
+    <main class="main-col">
+
+      <header class="hero">
+        <label class="upload-btn">
+          <input type="file" id="file-input" accept="application/pdf" hidden />
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          <span id="upload-label">Upload 10-K</span>
+        </label>
+        <h1>Binance</h1>
+        <p class="hero-sub">AI-Powered Binance Platform</p>
+        <p class="hero-sub">Real-time corporate insights and KPI extraction</p>
+      </header>
+
+      <div id="upload-status" class="upload-status" hidden></div>
+
+      <section class="kpi-grid" id="kpi-grid">
+        <div class="kpi-card" data-key="revenue">
+          <div class="kpi-card-top">
+            <div>
+              <div class="kpi-label">Revenue</div>
+              <div class="kpi-sub">Total company revenue</div>
+            </div>
+            <div class="kpi-icon-badge badge-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+          </div>
+          <div class="kpi-card-bottom">
+            <div class="kpi-source"><span class="kpi-avatar">&mdash;</span><span class="kpi-source-label">No report selected</span></div>
+            <div class="kpi-value">&mdash;</div>
+          </div>
+          <div class="kpi-underline underline-blue"></div>
+        </div>
+
+        <div class="kpi-card" data-key="net_income">
+          <div class="kpi-card-top">
+            <div>
+              <div class="kpi-label">Net Income</div>
+              <div class="kpi-sub">Profitability after expenses</div>
+            </div>
+            <div class="kpi-icon-badge badge-green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+          </div>
+          <div class="kpi-card-bottom">
+            <div class="kpi-source"><span class="kpi-avatar">&mdash;</span><span class="kpi-source-label">No report selected</span></div>
+            <div class="kpi-value">&mdash;</div>
+          </div>
+          <div class="kpi-underline underline-green"></div>
+        </div>
+
+        <div class="kpi-card" data-key="operating_income">
+          <div class="kpi-card-top">
+            <div>
+              <div class="kpi-label">Operating Income</div>
+              <div class="kpi-sub">Earnings from operations</div>
+            </div>
+            <div class="kpi-icon-badge badge-gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+          </div>
+          <div class="kpi-card-bottom">
+            <div class="kpi-source"><span class="kpi-avatar">&mdash;</span><span class="kpi-source-label">No report selected</span></div>
+            <div class="kpi-value">&mdash;</div>
+          </div>
+          <div class="kpi-underline underline-gold"></div>
+        </div>
+
+        <div class="kpi-card" data-key="cash_flow_from_operations">
+          <div class="kpi-card-top">
+            <div>
+              <div class="kpi-label">Operating Cash Flow</div>
+              <div class="kpi-sub">Cash flow from operations</div>
+            </div>
+            <div class="kpi-icon-badge badge-purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+            </div>
+          </div>
+          <div class="kpi-card-bottom">
+            <div class="kpi-source"><span class="kpi-avatar">&mdash;</span><span class="kpi-source-label">No report selected</span></div>
+            <div class="kpi-value">&mdash;</div>
+          </div>
+          <div class="kpi-underline underline-purple"></div>
+        </div>
+
+        <div class="kpi-card" data-key="total_assets">
+          <div class="kpi-card-top">
+            <div>
+              <div class="kpi-label">Total Assets</div>
+              <div class="kpi-sub">Total economic resources</div>
+            </div>
+            <div class="kpi-icon-badge badge-teal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+          </div>
+          <div class="kpi-card-bottom">
+            <div class="kpi-source"><span class="kpi-avatar">&mdash;</span><span class="kpi-source-label">No report selected</span></div>
+            <div class="kpi-value">&mdash;</div>
+          </div>
+          <div class="kpi-underline underline-teal"></div>
+        </div>
+
+        <div class="kpi-card" data-key="total_liabilities">
+          <div class="kpi-card-top">
+            <div>
+              <div class="kpi-label">Total Liabilities</div>
+              <div class="kpi-sub">Total outstanding obligations</div>
+            </div>
+            <div class="kpi-icon-badge badge-red">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+          </div>
+          <div class="kpi-card-bottom">
+            <div class="kpi-source"><span class="kpi-avatar">&mdash;</span><span class="kpi-source-label">No report selected</span></div>
+            <div class="kpi-value">&mdash;</div>
+          </div>
+          <div class="kpi-underline underline-red"></div>
+        </div>
+      </section>
+
+      <!-- KPI Comparison Chart -->
+      <section class="chart-section" id="chart-section" hidden>
+        <h2>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          KPI Comparison
+        </h2>
+        <div class="chart-panel">
+          <div class="chart-header">
+            <span class="chart-header-label" id="chart-company-label">Select a report to view chart</span>
+            <div class="chart-toggle">
+              <button class="chart-toggle-btn active" data-chart-type="bar" id="chart-btn-bar">Bar</button>
+              <button class="chart-toggle-btn" data-chart-type="radar" id="chart-btn-radar">Radar</button>
+            </div>
+          </div>
+          <div class="chart-canvas-wrap">
+            <canvas id="kpi-chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section class="deep-dive">
+        <h2>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          Qualitative Intelligence Deep-Dive
+        </h2>
+
+        <div class="company-panel">
+          <div class="company-panel-head">
+            <div>
+              <div class="company-name" id="company-name">No report selected</div>
+              <div class="company-fy" id="company-fy">Upload a 10-K to get started</div>
+            </div>
+            <div class="inspect-control">
+              <label for="report-select">Inspect company</label>
+              <select id="report-select" disabled>
+                <option value="">No reports yet</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="qual-empty" class="empty-state">No qualitative data yet &mdash; upload a filing above.</div>
+
+          <div id="qual-columns" class="qual-columns" hidden>
+            <div class="qual-col growth">
+              <h3>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                Top Growth Drivers
+              </h3>
+              <ul id="growth-list"></ul>
+            </div>
+            <div class="qual-col risk">
+              <h3>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Top Risk Factors
+              </h3>
+              <ul id="risk-list"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="chat-sidebar">
+      <div class="chat-header">
+        <div class="chat-header-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </div>
+        <div class="chat-header-text">
+          <div class="chat-title">AI Analyst</div>
+          <div class="chat-subtitle">Ask about your financial data</div>
+        </div>
+        <button id="new-chat-btn" class="icon-btn" type="button" title="New conversation">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+      </div>
+
+      <div id="chat-log" class="chat-log">
+        <div class="chat-msg-row assistant">
+          <div class="chat-avatar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </div>
+          <div class="chat-bubble">Hello! I'm your AI Financial Analyst. Ask me anything about the ingested company reports &mdash; revenue trends, risk analysis, growth drivers, live stock prices, and more.</div>
+        </div>
+      </div>
+
+      <div class="chat-footer">
+        <div class="chat-scope">
+          <label for="chat-company-select">Company</label>
+          <select id="chat-company-select">
+            <option value="">All Companies</option>
+          </select>
+        </div>
+        <form id="chat-form" class="chat-form">
+          <input type="text" id="chat-input" placeholder="Ask about revenue, risks, growth..." autocomplete="off" />
+          <button type="submit" class="send-btn" title="Send">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+      </div>
+    </aside>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="app.js?v=2"></script>
+</body>
+</html>
