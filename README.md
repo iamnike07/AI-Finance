@@ -1,6 +1,6 @@
 <div align="center">
           
-# 💹 Binance — AI-Powered Finance Platform
+# 💹 Finletics — AI-Powered Finance Platform
 
 **Real-time corporate insights, KPI extraction, and intelligent financial analysis**
 
@@ -18,7 +18,7 @@
 
 ## 🎯 Overview
 
-Binance is an end-to-end AI finance platform that lets you **upload SEC 10-K filings**, automatically **extract key financial KPIs**, and **chat with an AI analyst** that has deep context on your documents — plus access to **real-time stock prices and breaking news** via Finnhub.
+Finletics is an end-to-end AI finance platform that lets you **upload SEC 10-K filings**, automatically **extract key financial KPIs**, and **chat with an AI analyst** that has deep context on your documents — plus access to **real-time stock prices and breaking news** via Finnhub.
 
 ### ✨ Key Features
 
