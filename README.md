@@ -1,6 +1,6 @@
 <div align="center">
           
-# 💹 Finletics — AI-Powered Finance Platform
+#  Finletics — AI-Powered Finance Platform
 
 **Real-time corporate insights, KPI extraction, and intelligent financial analysis**
 
@@ -16,25 +16,25 @@
 
 ---
 
-## 🎯 Overview
+##  Overview
 
 Finletics is an end-to-end AI finance platform that lets you **upload SEC 10-K filings**, automatically **extract key financial KPIs**, and **chat with an AI analyst** that has deep context on your documents — plus access to **real-time stock prices and breaking news** via Finnhub.
 
-### ✨ Key Features
+###  Key Features
 
 | Feature | Description |
 |---|---|
-| 📄 **PDF Ingestion** | Upload 10-K filings → automatic Markdown conversion, semantic chunking, and vector embedding |
-| 📊 **KPI Extraction** | AI-powered extraction of Revenue, Net Income, Operating Income, Cash Flow, Assets, Liabilities, Risk Factors & Growth Drivers |
-| 📈 **Interactive Charts** | Bar and Radar chart visualizations for comparing KPI metrics (Chart.js) |
-| 🤖 **AI Chat Analyst** | RAG-powered Q&A with hybrid retrieval (dense vectors + BM25 + Reciprocal Rank Fusion) |
-| 💬 **Conversation Memory** | Multi-turn chat with full context retention via Gemini's Interactions API |
-| 📡 **Real-Time Market Data** | Live stock quotes and breaking company news via Finnhub API |
-| 🎨 **Premium UI** | Glassmorphism, animated KPI counters, typing indicators, markdown chat rendering |
+|  **PDF Ingestion** | Upload 10-K filings → automatic Markdown conversion, semantic chunking, and vector embedding |
+|  **KPI Extraction** | AI-powered extraction of Revenue, Net Income, Operating Income, Cash Flow, Assets, Liabilities, Risk Factors & Growth Drivers |
+|  **Interactive Charts** | Bar and Radar chart visualizations for comparing KPI metrics (Chart.js) |
+|  **AI Chat Analyst** | RAG-powered Q&A with hybrid retrieval (dense vectors + BM25 + Reciprocal Rank Fusion) |
+|  **Conversation Memory** | Multi-turn chat with full context retention via Gemini's Interactions API |
+|  **Real-Time Market Data** | Live stock quotes and breaking company news via Finnhub API |
+|  **Premium UI** | Glassmorphism, animated KPI counters, typing indicators, markdown chat rendering |
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -82,7 +82,7 @@ User Query
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -139,7 +139,7 @@ Open **http://localhost:8001** in your browser.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 investor-platform/
@@ -166,7 +166,7 @@ investor-platform/
 
 ---
 
-## 🔌 API Reference
+##  API Reference
 
 ### Reports
 
@@ -201,7 +201,7 @@ investor-platform/
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology | Purpose |
 |-------|-----------|---------|
@@ -218,7 +218,7 @@ investor-platform/
 
 ---
 
-## 💡 Usage
+##  Usage
 
 ### Upload a 10-K Filing
 
@@ -242,7 +242,7 @@ The AI has access to your uploaded documents **and** real-time market data.
 
 ---
 
-## 📝 License
+##  License
 
 This project is for educational and personal use.
 
